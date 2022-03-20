@@ -1,4 +1,4 @@
-# A short interview with @R4GUL, the author of the challenge SIGINT
+# A short interview with @R4GUL#8503, the author of the challenge SIGINT
 ## Tell me a bit about yourself.
 > I play CTFs and I am a part of CTFSG.
 ## What got you into hardware?
