@@ -1,9 +1,9 @@
 # Whitehacks 2022 | The Floor Is Java
-## The contestant is given a Java class file _Reverse.class_ and a text file _message.txt_ that was encrypted by it.
+## The contestant is given a Java class file __Reverse.class__ and a text file __message.txt__ that was encrypted by it.
 ---
 >It was a manageable and fun challenge. I got my way through decompiling the java class and reverse engineering the source code.
 * Decompile the class file
-  * I used a website like [https://jdec.app/](https://jdec.app/). This is the result, _Reverse.java_:
+  * I used a website like [https://jdec.app/](https://jdec.app/) to decompile it. This is the result, __Reverse.java__:
   ```Java
   /* Decompiler 12ms, total 1401ms, lines 82 */
     import java.util.Scanner;
@@ -90,7 +90,7 @@
   ```
 * Reverse engineer Java code
   * I was not a Java programmer, so I first converted it into a Python script. The way I did this was by translating Java code into whatever I thought was the shortest and closest equivilant, and encoding the same string repeatedly to check.
-  * Next, I wrote decode functions that did the reverse of whatever the encode function did. Funnily enough, 2 of the functions were reversed by simply running them again. I checked them by encoding before decoding a string, ensuring that the string remained unchanged. This is the result:
+  * Next, I wrote decode functions that did the reverse of whatever their encode function counterparts did. Funnily enough, 2 of the functions were reversed by simply running them again. I checked the code by encoding before decoding a string, ensuring that the string remained unchanged. This is the result:
     ```Python 
             
         def encode_1(s):
